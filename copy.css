@@ -1,10 +1,30 @@
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#z-head {
+  position: fixed;
+  z-index: 10;
+}
+
+.head.hide {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.head {
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+  background-color: white;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 .head .head-title {
@@ -20,36 +40,56 @@
           align-items: center;
 }
 
-.head .head-menu {
-  margin: 15px;
+.head .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar {
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 113px;
 }
 
 .main-visual {
-  width: 80%;
+  width: 95%;
+  height: 1500px;
+  margin: 130px auto 10px;
 }
 
 .main-visual .notice {
   background-color: #cccccc;
 }
 
-.main-visual .main-img {
-  width: 80%;
+.main-visual .main-image {
+  width: 100%;
+  height: 630px;
+  background-image: url("img/fashion.jpg");
+  background-size: cover;
 }
 
-.main-visual .recomend-item {
+.main-visual .main-contents .row {
+  background-color: red;
+  padding: 0;
+}
+
+.main-visual .main-contents .recomend-item {
   width: 100%;
   height: 280px;
-  margin: 10px;
   -webkit-box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
-.main-visual .recomend-item .img {
+.main-visual .main-contents .recomend-item .img {
   width: 100%;
   height: 200px;
 }
 
-.main-visual .new-item {
+.main-visual .main-contents .new-item {
   width: 330px;
   height: 310px;
   margin: 5px;
@@ -57,12 +97,8 @@
           box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
-.main-visual .new-item .img {
+.main-visual .main-contents .new-item .img {
   width: 100%;
   height: 300px;
-}
-
-.resizeimage {
-  width: 100%;
 }
 /*# sourceMappingURL=copy.css.map */
