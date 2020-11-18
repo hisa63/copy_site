@@ -40,6 +40,10 @@
           align-items: center;
 }
 
+.head .head-title .title-color {
+  color: blue;
+}
+
 .head .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +51,21 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.head .head-menu {
+  margin: 0;
+}
+
+.head .head-menu .menu-search {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.head .head-menu .menu-search .search-box {
+  width: 100%;
+  max-width: 800px;
 }
 
 .sidebar {
@@ -57,7 +76,6 @@
 
 .main-visual {
   width: 95%;
-  height: 1500px;
   margin: 130px auto 10px;
 }
 
@@ -66,39 +84,78 @@
 }
 
 .main-visual .main-image {
+  max-width: 1162px;
   width: 100%;
   height: 630px;
   background-image: url("img/fashion.jpg");
   background-size: cover;
 }
 
+.main-visual .main-contents {
+  width: 100%;
+}
+
 .main-visual .main-contents .row {
-  background-color: red;
-  padding: 0;
+  margin: 5px auto;
+}
+
+.main-visual .main-contents .contents-title {
+  width: 100%;
 }
 
 .main-visual .main-contents .recomend-item {
   width: 100%;
-  height: 280px;
   -webkit-box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .main-visual .main-contents .recomend-item .img {
   width: 100%;
-  height: 200px;
+}
+
+@media screen and (min-width: 480px) {
+  .main-visual .main-contents {
+    max-width: 100%;
+  }
+  .main-visual .main-contents .recomend-item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-visual .main-contents {
+    max-width: 100%;
+  }
+  .main-visual .main-contents .recomend-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-visual .main-contents {
+    max-width: 100%;
+  }
+  .main-visual .main-contents .recomend-item {
+    width: 25%;
+  }
 }
 
 .main-visual .main-contents .new-item {
-  width: 330px;
-  height: 310px;
-  margin: 5px;
+  width: 100%;
   -webkit-box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .main-visual .main-contents .new-item .img {
   width: 100%;
-  height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-visual .main-contents {
+    max-width: 100%;
+  }
+  .main-visual .main-contents .new-item {
+    width: 33%;
+  }
 }
 /*# sourceMappingURL=copy.css.map */
